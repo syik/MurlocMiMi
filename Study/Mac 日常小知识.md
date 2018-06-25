@@ -14,3 +14,13 @@
 `/Users/wanliming/Library/Developer/Xcode/DerivedData`
 `/Users/wanliming/Library/Developer/Xcode/iOS\ DeviceSupport`里面的模拟器
 
+### Mac 命令行处理 rar 文件
+[rar命令地址](https://www.rarlab.com/download.htm)
+
+#### install:
+`rar：sudo install -c -o $USER rar /usr/local/bin/`
+`unrar：sudo install -c -o $USER unrar /usr/local/bin`
+
+#### Usage
+`unrar x xx.rar`
+`rar a xx.rar A B`
