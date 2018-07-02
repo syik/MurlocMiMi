@@ -11,5 +11,6 @@ RUN pip install --requirement /src/requirements.txt
 COPY . /src/
 ```
 
-
+### 不同设备对应的 Metal 版本
+![20180701153044009365082.png](http://p88xz0cfk.bkt.clouddn.com/20180701153044009365082.png)
 
