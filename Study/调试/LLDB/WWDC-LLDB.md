@@ -25,12 +25,17 @@ thread jump –by 1 可以跳过一行
 breakpoint set --one-shot true --name "-[UILabel setText:]"
 
 ### po & p
-po ==> `expression --object-description -- <expression>` 是等价于 Debug description 描述的，也就是遵循 CustomDebugStringConvertible 后输出的内容
-p  ==> expression -- <expression>
+po ==> `expression --object-description -- <expression>` <--O> 是等价于 Debug description 描述的，也就是遵循 CustomDebugStringConvertible 后输出的内容
+p  ==> expression -- <expression>  <-->
 
 ### Debug view inspector
 ![20180703153061050785330.png](http://p88xz0cfk.bkt.clouddn.com/20180703153061050785330.png)
 ![20180703153061052245885.png](http://p88xz0cfk.bkt.clouddn.com/20180703153061052245885.png)
+
+
+## Write the full crashlog into file
+bugreport unwind --outfile /Users/wanliming/Desktop/buglog.txt
+bugreport unwind --append-outfile /Users/wanliming/Desktop/buglog.txt
 
 ### 需要写入到系统配置表里面的内容
 ### TODO: nudge 的使用， 内容加入到全局自动控制配置表里面
